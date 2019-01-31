@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DeckRobotWeb.Controllers
 {
     [Route("api/[controller]")]
-    public class SampleDataController : Controller
+    public partial class SampleDataController : Controller
     {
         private static string[] Summaries = new[]
         {
@@ -24,21 +24,6 @@ namespace DeckRobotWeb.Controllers
                 TemperatureC = rng.Next(-20, 55),
                 Summary = Summaries[rng.Next(Summaries.Length)]
             });
-        }
-
-        public class WeatherForecast
-        {
-            public string DateFormatted { get; set; }
-            public int TemperatureC { get; set; }
-            public string Summary { get; set; }
-
-            public int TemperatureF
-            {
-                get
-                {
-                    return 32 + (int)(TemperatureC / 0.5556);
-                }
-            }
         }
     }
 }
