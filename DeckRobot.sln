@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckRobotWeb", "DeckRobotWe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckRobotTest", "DeckRobotTest\DeckRobotTest.csproj", "{BC4D9592-5580-4445-AEBF-9BE0E3E78CCC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckRobotDomain", "DeckRobotDomain\DeckRobotDomain.csproj", "{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{BC4D9592-5580-4445-AEBF-9BE0E3E78CCC}.Release|x64.Build.0 = Release|Any CPU
 		{BC4D9592-5580-4445-AEBF-9BE0E3E78CCC}.Release|x86.ActiveCfg = Release|Any CPU
 		{BC4D9592-5580-4445-AEBF-9BE0E3E78CCC}.Release|x86.Build.0 = Release|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Debug|x64.Build.0 = Debug|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Debug|x86.Build.0 = Debug|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Release|x64.ActiveCfg = Release|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Release|x64.Build.0 = Release|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Release|x86.ActiveCfg = Release|Any CPU
+		{7DAF3D3B-FAC0-46BF-B9A7-1150667F9BCC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

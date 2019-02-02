@@ -1,0 +1,21 @@
+@page
+@model Test
+@{
+    ViewData["Title"] = "Test";
+}
+
+<h4>Test Upload</h4>
+
+<form class="form" method="post" enctype="multipart/form-data" action="/api/powerpoint">
+    <div class="form-group">
+        <div class="col-md-10">
+            <label>Power:</label>
+            <input type="file" name="file"  />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="Upload" />
+        </div>
+    </div>
+</form>

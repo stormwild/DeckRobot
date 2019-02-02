@@ -18,11 +18,9 @@ This task is a web application which provides functionality to modify the font a
 
 - Create a simple Web Service using ASP.NET Core 2.0 or above which would receive uploaded file, the font name and the font size
 
-    - Web Service should change the font and the font size of all the text elements in the uploaded pptx file and return updated file
-back to the user
+    - Web Service should change the font and the font size of all the text elements in the uploaded pptx file and return updated file back to the user
     - Result file name should have name output.pptx
-    - Provide a way to download updated pptx file - it can be downloaded automatically or a download link should be provided in the
-web form
+    - Provide a way to download updated pptx file - it can be downloaded automatically or a download link should be provided in the web form
 
 ### NuGet Package Spire.Presentation
 

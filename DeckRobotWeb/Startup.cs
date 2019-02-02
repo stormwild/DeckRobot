@@ -1,3 +1,4 @@
+using DeckRobotDomain.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -23,6 +24,8 @@ namespace DeckRobotWeb
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddScoped<IPowerPointService, PowerPointService>();
+
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -32,7 +35,7 @@ namespace DeckRobotWeb
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "Sample Data", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "Deck Robot Api", Version = "v1" });
             });
         }
 
@@ -61,7 +64,8 @@ namespace DeckRobotWeb
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sample Data");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Deck Robot Api");
+
             });
 
             app.UseMvc(routes =>
