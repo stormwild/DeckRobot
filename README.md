@@ -1,35 +1,37 @@
 # DeckRobot
 
-## Test Tasks: C# Engineer (Server)
+## Pre-requisites
 
-The purpose of test task(s) is to give us insides into your code practices, shown knowledge of technologies that are being used in our company and ability to learn new technologies and frameworks.
+- Dotnet Core
+- Node 8+
+- git
 
-## Task #3 
+## Download/Clone Repository
 
-Create Web Application that modifies a PowerPoint file 
+```
+git clone git@github.com:stormwild/DeckRobot.git
+cd DeckRobot
+dotnet run -p DeckRobotWeb/DeckRobotWeb.csproj 
+```
 
-### Overview 
+You may need to run npm install on DeckRobotWeb/ClientApp
 
-This task is a web application which provides functionality to modify the font and the font side of a power point file (pptx) using library Spire.Presentation.
+```
+cd DeckRobotWeb/ClientApp
+npm i
+```
 
-### Details
+## Instructions
 
-- Create a simple Web Application using ReactJs that would upload a pptx file (input.pptx or any other pptx file), name of a font and a font size
+- Select fontFamily
+- Choose a powerpoint file
+- Click Submit
 
-- Create a simple Web Service using ASP.NET Core 2.0 or above which would receive uploaded file, the font name and the font size
+## Error
 
-    - Web Service should change the font and the font size of all the text elements in the uploaded pptx file and return updated file back to the user
-    - Result file name should have name output.pptx
-    - Provide a way to download updated pptx file - it can be downloaded automatically or a download link should be provided in the web form
+Currently returns an error
 
-### NuGet Package Spire.Presentation
+## Tasks
 
+Still to implement file download in axios
 
-- [Spire.Presentation](https://www.nuget.org/packages/Spire.Presentation/)
-
-### Examples
-
-- task3 - input.pptx
-- task3 - output.pptx
-
-## Test
