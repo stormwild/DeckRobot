@@ -2,10 +2,9 @@
 
 namespace DeckRobotDomain.Model
 {
-    public class PowerPointFontChangeRequest
+    public class PowerPointResult
     {
         public string Filename { get; set; }
         public string FontName { get; set; }
-        public string FontSize { get; set; }
     }
 }
